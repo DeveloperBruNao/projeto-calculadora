@@ -28,8 +28,15 @@
                 <button type="submit" class="btn">=</button>
                 <button type="button" class="btn" onclick="adicionar('/')">/</button>
                 <button type="button" class="btn" onclick="limpar()">C</button>
+            </div>
+        </form>
+        <div class="result">
+            {% if resultado is not none %}
+                <h2>Resultado: {{ resultado }}</h2>
+            {% endif %}
         </div>
     </div>
+
     
 </body>
 </html>
