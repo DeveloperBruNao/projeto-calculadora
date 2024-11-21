@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="calculator">
-        
+        <form  method="post" action="/calcular">
+        <input type="text" name="expressao" id="display" value="{{ expressao if expressao else '' }}" readonly>
+        <div class="buttons">
+
+        </div>
     </div>
     
 </body>
