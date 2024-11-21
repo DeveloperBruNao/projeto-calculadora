@@ -11,7 +11,23 @@
         <form  method="post" action="/calcular">
         <input type="text" name="expressao" id="display" value="{{ expressao if expressao else '' }}" readonly>
         <div class="buttons">
-
+            <button type="button" class="btn" onclick="adicionar('1')">1</button>
+                <button type="button" class="btn" onclick="adicionar('2')">2</button>
+                <button type="button" class="btn" onclick="adicionar('3')">3</button>
+                <button type="button" class="btn" onclick="adicionar('+')">+</button>
+                <button type="button" class="btn" onclick="adicionar('4')">4</button>
+                <button type="button" class="btn" onclick="adicionar('5')">5</button>
+                <button type="button" class="btn" onclick="adicionar('6')">6</button>
+                <button type="button" class="btn" onclick="adicionar('-')">-</button>
+                <button type="button" class="btn" onclick="adicionar('7')">7</button>
+                <button type="button" class="btn" onclick="adicionar('8')">8</button>
+                <button type="button" class="btn" onclick="adicionar('9')">9</button>
+                <button type="button" class="btn" onclick="adicionar('*')">*</button>
+                <button type="button" class="btn" onclick="adicionar('0')">0</button>
+                <button type="button" class="btn" onclick="adicionar('.')">.</button>
+                <button type="submit" class="btn">=</button>
+                <button type="button" class="btn" onclick="adicionar('/')">/</button>
+                <button type="button" class="btn" onclick="limpar()">C</button>
         </div>
     </div>
     
